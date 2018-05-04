@@ -1,0 +1,19 @@
+{
+  "name": "models",
+  "version": "0.1.0",
+  "private": "true",
+  "description": "statistical model test suite",
+  "main": "index.js",
+  "repository": "https://github.com/WintonCentre/models.git",
+  "author": "gmp26 <gmp26@cam.ac.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "@cljs-oss/module-deps": "^1.1.1",
+    "left-pad": "^1.1.3",
+    "shelljs": "^0.8.1"
+  },
+  "devDependencies": {
+    "source-map-support": "^0.4.15",
+    "ws": "^0.8.1"
+  }
+}
