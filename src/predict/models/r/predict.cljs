@@ -3,7 +3,15 @@
   (:require [cljs.nodejs :as nodejs]))
 
 (def shell (nodejs/require "shelljs"))
-(def predict-sh "${HOME}/.m2/repository/predict-r-model/predict-r-model/predict_r.sh")
+
+(def version "0.1.0")
+(def maven-directory (str "${HOME}/.m2/repository/predict-r-model/predict-r-model/" version "/"))
+(def extract-directory maven-directory)
+(def library-jar (str "predict-r-model-" version ".jar"))
+(def predict-shell-file "predict_r.sh")
+(def predict-r-file "Predict-v2.1-2018-04-07.R")
+
+(def predict-sh (str extract-directory predict-shell-file))
 
 (defn exec
   "shell out a command, and return the output.
@@ -11,6 +19,9 @@
   [command]
   (.exec shell command #js {:silent true})
   )
+
+(exec (str "tar -zxvf " maven-directory library-jar " -C " extract-directory " " predict-shell-file))
+(exec (str "tar -zxvf " maven-directory library-jar " -C " extract-directory " " predict-r-file))
 
 (defn errmsg [cmd]
   (println "Check " cmd " works in your copy of R. Check libraries are available"))
