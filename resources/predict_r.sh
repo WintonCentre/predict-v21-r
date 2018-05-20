@@ -14,7 +14,7 @@ for(n in names(cargs)) {
 #
 
 #library("tidyverse", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library");
-library("tidyverse", lib.loc="~/Library/R/3.4/library")
+#library("tidyverse", lib.loc="~/Library/R/3.4/library")
 
 #
 # NB: iMac wants /Library path first.
@@ -28,7 +28,7 @@ library("tidyverse");
 options(digits = 14);
 
 # execute Paul Pharoah's script
-source("Predict-v2.1-2018-04-07.R");
+source("~/.m2/repository/predict-r-model/predict-r-model/0.1.0/Predict-v2.1-2018-04-07.R");
 
 # return only benefits2.1
 print(toJSON(digits=14,
