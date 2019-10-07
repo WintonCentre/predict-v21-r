@@ -14,7 +14,7 @@ for(n in names(cargs)) {
 #
 
 #library("tidyverse", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library");
-library("tidyverse", lib.loc="~/Library/R/3.4/library")
+#library("tidyverse", lib.loc="~/Library/R/3.4/library")
 
 #
 # NB: iMac wants /Library path first.
