@@ -12,3 +12,4 @@ pom.xml.asc
 .idea
 node_modules
 .Rproj.user
+.DS_Store

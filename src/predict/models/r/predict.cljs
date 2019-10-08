@@ -17,7 +17,7 @@
   "shell out a command, and return the output.
   exec is synchronous - which helps hugely with check.test testing"
   [command]
-  (.exec shell command #js {:silent true})
+  (.exec shell command #js {:silent false})
   )
 
 (exec (str "tar -zxvf " maven-directory library-jar " -C " extract-directory " " predict-shell-file))
