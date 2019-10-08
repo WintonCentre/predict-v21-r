@@ -6,21 +6,21 @@
 
 
 ## ----input, echo=FALSE---------------------------------------------------
-age.start  <- 25
-screen     <- 1     # Clinically detected = 0, screen detected = 1
-size       <- 2    # Tumour size mm
-grade      <- 1     # Tumour grade
-nodes      <- 2     # Number positive nodes
-er         <- 1     # ER+ = 1, ER- = 0
-her2       <- 1     # HER2+ = 1, HER2- = 0, missing = 9
-ki67       <- 1     # KI67+ = 1, KI67- = 0, missing = 9
-generation <- 3     # Chemo generation 0, 2 or 3 only
-horm       <- 1     # Hormone therapy Yes = 1, no = 0
-traz       <- 1     # Trastuzumab therapy Yes = 1, no = 0
-bis        <- 1     # Bisphosphonate therapy Yes = 1, no = 0
-radio      <- 0     # Radiotherapy Yes = 1, no = 0
+#age.start  <- 25
+#screen     <- 1     # Clinically detected = 0, screen detected = 1
+#size       <- 2    # Tumour size mm
+#grade      <- 1     # Tumour grade
+#nodes      <- 2     # Number positive nodes
+#er         <- 1     # ER+ = 1, ER- = 0
+#her2       <- 1     # HER2+ = 1, HER2- = 0, missing = 9
+#ki67       <- 1     # KI67+ = 1, KI67- = 0, missing = 9
+#generation <- 3     # Chemo generation 0, 2 or 3 only
+#horm       <- 1     # Hormone therapy Yes = 1, no = 0
+#traz       <- 1     # Trastuzumab therapy Yes = 1, no = 0
+#bis        <- 1     # Bisphosphonate therapy Yes = 1, no = 0
+#radio      <- 0     # Radiotherapy Yes = 1, no = 0
 
-r.enabled  <- 0     # Radiotherapy enabled = 1, disabled = 0
+#r.enabled  <- 0     # Radiotherapy enabled = 1, disabled = 0
 
 ##----------------------------------------------------------------
 ##[WINTON FIX] Fix inputs
@@ -339,7 +339,7 @@ benefits2.1 <- 100*(pred.cum.all.rx[,1] - pred.cum.all.rx)
 
 # rx benefits
 
-benefits2.1.2 <- 100*(pred.cum.all.rel.rx[,1] - pred.cum.all.rel.rx)
+# benefits2.1.2 <- 100*(pred.cum.all.rel.rx[,1] - pred.cum.all.rel.rx)
 
 ## ------------------------------------------------------------------------
 delay <- 5   # Set delay to 0 to check predictions with main model
