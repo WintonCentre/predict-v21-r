@@ -20,8 +20,18 @@
   (.exec shell command #js {:silent false})
   )
 
-(exec (str "tar -zxvf " maven-directory library-jar " -C " extract-directory " " predict-shell-file))
-(exec (str "tar -zxvf " maven-directory library-jar " -C " extract-directory " " predict-r-file))
+;(exec (str "tar -zxvf " maven-directory library-jar " -C " extract-directory " " predict-shell-file))
+;(exec (str "tar -zxvf " maven-directory library-jar " -C " extract-directory " " predict-r-file))
+;
+;; sh needs to become executable. Before was not having this issue but now need this fix.
+;(print (str extract-directory))
+;(print (str predict-shell-file))
+;(print (str predict-sh))
+;(exec (str predict-sh))
+;;(print (str "chmod +x " extract-directory " " predict-shell-file))
+;(print (str "chmod +x " extract-directory" "predict-shell-file))
+;(exec (str "chmod +x " extract-directory" "predict-shell-file))
+
 
 (defn errmsg [cmd]
   (println "Check " cmd " works in your copy of R. Check libraries are available"))
