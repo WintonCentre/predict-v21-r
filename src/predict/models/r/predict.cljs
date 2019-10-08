@@ -4,7 +4,7 @@
 
 (def shell (nodejs/require "shelljs"))
 
-(def version "0.1.0")
+(def version "0.1.1")
 (def maven-directory (str "${HOME}/.m2/repository/predict-r-model/predict-r-model/" version "/"))
 (def extract-directory maven-directory)
 (def library-jar (str "predict-r-model-" version ".jar"))
