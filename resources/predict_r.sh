@@ -28,7 +28,8 @@ library("tidyverse");
 options(digits = 14);
 
 # execute Paul Pharoah's script
-source("Predict-v2.1-2018-04-07.R");
+#source("Predict-v2.1-2018-04-07.R");
+source("/Users/jin/Workspace/PredictBreast_Testing/predict-v21-test/tempdebug/Predict-v2.1-2018-04-07.R");
 
 # return only benefits2.1
 print(toJSON(digits=14,
